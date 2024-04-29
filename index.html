@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Socket IO Private Chat Messaging</title>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
+	<link href="https://wmuza.github.io/SocketIO-Chat-App/public/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="https://wmuza.github.io/SocketIO-Chat-App/public/css/style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+		<div class="chat">
+			<div class="chat-title">
+				<h1>We are Online</h1>
+				<figure class="avatar">
+				  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAACUCAMAAADLemePAAAAh1BMVEUAaTTxWyX////wSwAAXBX71MvL180sLG/GxtT8/P339/nw8PQmJmwqKm4AAF2ZmbPg4OccHGggIGoAAE4WFmazs8VaWok7O3eTk62qqr9BQXmjo7gAAGG8vM3T097m5ux9fZ1sbJQREWaIiKYAAFN2dpktLWgICFxkZI1ra41JSX9RUYBERHTMAlNEAAAEAUlEQVR4nO2abZOrJhSA03PbgqCgrhJRQY3Jxqz3//++gjvtzm2nu5/IDsx5PphEMyPPAIfDy+m3pDl9dwHCgnoxg3oxg3oxg3oxg3oxg3oxg3oxg3oxg3oxg3oxg3oxg3oxg3oxg3oxg3oxg3oxg3oxg3oxg3oxg3oxg3oxg3oxg3oxc/qRNKc/kuYESfM0PV7SYV6UWuaBlvxZb32OXmaH5SLGpqrrqhnFZRls9pQXP0WP3vp7VdQ1GYUYSV0X1eV8o8948xP0+EyanAih1Etblu2LUkKQvCHzE5poeD1zafKaCO2+lsC5uwBoQeq8uZjgLw+tx6RwcmvbZcx7lceFsbVdnaCQLPDrA+vxdSR5T30zZNZdrXX3rJfitM/JuAZuoGH12NoUzVXB5KyAugt1AcX6oGInUFf3cA1bf0H1sm4sGumGgIxO72rGvH9O1N+VTTF2QUeIoHpGkMp1OvfNtq7LuZ7Wtq43uv5nfHWyrKuICBpfQurxvMivjFHvt1rIbhNoDdMtA7uC74yMXfO8Cdn9QurNTd2rDLhvntPufhsYBjAzwD75pskhU33dzAGLEFCPkpwcqUmmXAXNHbQK5ACqhc4ZcZX98qcwhNPLbk298slLcGWBvdryzrqO3Uv7ysB6ZcgmvrrqCxddwunZc04MlEcQsQ8D3cbPuuv0mW8d0Mdxm5ZgSH62wQoRTs8lXsJFkMmsflD42fLCqE3KTZmCm58uXk6rcU9W8Z6whSGYHt+qsT1and1nNyI0WvemHwZ30bpx48O6H5WWtWO1BQuewfSmsRDA33MS+dpxXcsH3aXc6UNWmnev3fGIMRDFOIUqRTA9KuoNSktp6arQbkTLh17MuppFPwZNNld1WUmpLWGrRbDYGUxPjk7Ppc9U3mZdcnp+uLiy9P3iosvjbHip55ukPs1W9ShDlSKY3q0hL372A2wy6n5WLV26t6ooqrduoa0635WZjqZbvpDmFqoUwfR8ZPnnR6a3fjdLRRzVYvZ+0x8zBR9bQpUimN5bLUru+p5p9SC7Tg7D6iZ4jqJfpb8zDLo1ru/xUtRvoUrxfXoyar2vGudHIhZl4/yf0JInElrcwKASHhgSH9aPpIwlm5QdKfVh93lKzeJMqX+dEJnUJkR/T2fpF9PZNtLpbDYfixHHinSCixH/XUrSO0gJu05iKSn1hUDgdf7pMi5l2TXP61iXcf0ifPPpIryMeRHeZ2bkiy0UESwfO3jCBthLqhtgqW9ffmw+ryzFzWfwRwcu6R4dAH/wo0j44Af4Yzvnfx3buadzbAdSP3TlSfnI3Ldx+jNpTr8nzQlBEARBEARBEARBEARBEARBEARBEARBEARBEARBEAT5Vv4Cj5vyLzoxW+UAAAAASUVORK5CYII=	" />
+				  <span class="chat-message-counter">2</span>
+				</figure>
+				<span class="online-bullet"></span>
+			</div>
+			<div class="messages">
+				<div class="messages-content"></div>
+			</div>
+			<div class="message-box">
+				<textarea type="text" class="message-input" placeholder="Type message..."></textarea>
+				<button type="submit" class="message-submit">Send</button>
+			</div>
+		</div>
+		<div class="bg"></div>
+		
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+	<script src="./public//js/main.js"></script>     
+  </body>
+</html>
